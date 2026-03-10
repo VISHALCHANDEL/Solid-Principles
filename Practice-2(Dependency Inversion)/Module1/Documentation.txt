@@ -1,0 +1,39 @@
+Users can pay using:
+
+Credit Card
+
+PayPal
+
+UPI
+
+We will design this system using the Dependency Inversion Principle from SOLID Principles.
+
+
+
+
+           +------------------+
+           |   Main Class     |
+           +------------------+
+                    |
+                    v
+           +------------------+
+           | PaymentProcessor |
+           | (High Level)     |
+           +------------------+
+                    |
+                    v
+            +----------------+
+            | PaymentMethod  |  ← Interface (Abstraction)
+            +----------------+
+             /       |        \
+            v        v         v
+
+   +-----------+  +-----------+  +-----------+
+   |CreditCard |  | PayPal    |  |   UPI     |
+   | Payment   |  | Payment   |  | Payment   |
+   +-----------+  +-----------+  +-----------+
+
+        Low-Level Modules (Details)
+
+
+

@@ -1,0 +1,61 @@
+🟠 Amazon-Style Interview Question
+
+You are working on a reporting module for an e-commerce company like Amazon.
+
+📌 Current System
+
+The system:
+
+Generates sales report data
+
+Prints report to console
+
+Saves report to file
+
+📌 New Business Requirements
+
+After 6 months, business team asks:
+
+Export report as PDF
+
+Export report as Excel
+
+Export report as JSON
+
+Later: Export report as XML
+
+They clearly say:
+
+“We will keep adding new export formats frequently.”
+
+🎯 Your Task (Interview Mode)
+
+Design a system that:
+
+Follows SRP
+
+Follows OCP
+
+Does NOT use if-else to check report type
+
+Allows adding XML export later WITHOUT modifying existing classes
+
+🚨 Important Constraint
+
+If tomorrow we add:
+
+"Upload report to cloud"
+
+Your design should handle that without modifying old code.
+
+Now:
+
+👉 Write your design
+
+Classes
+
+Interfaces
+
+Sample Java code
+
+After you submit, I will review like a strict Amazon interviewer.
